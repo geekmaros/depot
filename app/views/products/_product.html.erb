@@ -1,0 +1,17 @@
+<div id="<%= dom_id product %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Title:</strong>
+    <%= product.title %>
+  </p>
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= product.description %>
+  </p>
+  <div class="my-5">
+    <%= image_tag(product.image_url, class:"block object-cover object-center rounded-sm shadow-sm w-46 h-80 font-medium mb-1") %>
+  </div>
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Price:</strong>
+    <%= product.price %>
+  </p>
+</div>
